@@ -1,0 +1,62 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | WERT Bank</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
+</head>
+<body>
+
+<header class="header">
+    <nav class="navbar">
+        <a href="index.html" class="logo">● WERT Bank</a>
+
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="calculator.html">EMI Calculator</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a class="login-link active" href="login.html">Login</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section class="form-page">
+
+    <div class="form-box">
+        <div class="form-logo">● WERT Bank</div>
+
+        <h1>Welcome Back</h1>
+        <p>Login to your demo account</p>
+
+        <form id="loginForm">
+
+            <label for="username">Username</label>
+            <input type="text" id="username" placeholder="Enter username" required>
+
+            <label for="password">Demo Access Code</label>
+            <input type="password" id="password" placeholder="Enter demo code" required>
+
+            <button type="submit" class="primary-btn">Demo Login</button>
+
+        </form>
+
+        <p id="loginMessage" class="message"></p>
+
+        <p class="notice">
+            This is an educational demo. Never enter real banking credentials.
+        </p>
+    </div>
+
+</section>
+
+<footer>
+    © 2026 WERT Bank. All Rights Reserved.
+</footer>
+
+</body>
+</html>

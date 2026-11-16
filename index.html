@@ -1,0 +1,247 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WERT Bank | Dashboard</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/script.js" defer></script>
+</head>
+<body>
+
+<div class="dashboard">
+
+    <aside class="sidebar">
+        <h2 class="logo">● WERT Bank</h2>
+
+        <p class="menu-title">MENU</p>
+
+        <a href="index.html" class="menu active">▦ Dashboard</a>
+        <a href="about.html" class="menu">◉ About Us</a>
+        <a href="services.html" class="menu">▣ Services</a>
+        <a href="calculator.html" class="menu">▤ EMI Calculator</a>
+        <a href="contact.html" class="menu">✉ Contact</a>
+
+        <p class="menu-title">ACCOUNT</p>
+
+        <a href="login.html" class="menu">♙ Login</a>
+
+        <div class="sidebar-bottom">
+            <h3>WERT Bank</h3>
+            <p>Banking made smarter.</p>
+            <small>Digital Banking Experience</small>
+        </div>
+    </aside>
+
+    <main class="main-content">
+
+        <div class="topbar">
+            <div>
+                <h1>Dashboard</h1>
+                <p>Welcome back to WERT Bank!</p>
+            </div>
+
+            <div class="top-actions">
+                <input type="text" id="searchInput" placeholder="Search transactions...">
+
+                <div class="profile">
+                    <span>👤</span>
+                    <div>
+                        <strong>Alex Morgan</strong>
+                        <small>Premium Account</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <section class="top-grid">
+
+            <div class="balance-card">
+                <p>Total Account Balance</p>
+                <h2 id="balance">₹ 8,45,620.50</h2>
+                <button id="toggleBalance">Hide Balance</button>
+
+                <div class="balance-footer">
+                    <span>Account: **** 4586</span>
+                    <span>● Active</span>
+                </div>
+            </div>
+
+            <div class="bank-card">
+                <div class="bank-card-top">
+                    <h2>WERT Bank</h2>
+                    <span>VISA</span>
+                </div>
+
+                <p>PREMIUM DEBIT CARD</p>
+                <h2>**** **** **** 4586</h2>
+
+                <div class="bank-card-bottom">
+                    <span>ALEX MORGAN</span>
+                    <span>12/29</span>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="quick-actions">
+            <h2>Quick Actions</h2>
+
+            <div class="action-grid">
+                <button class="action" id="transferBtn">
+                    <span>↗</span>
+                    Send Money
+                </button>
+
+                <button class="action" id="receiveBtn">
+                    <span>↙</span>
+                    Receive Money
+                </button>
+
+                <button class="action" id="billBtn">
+                    <span>▤</span>
+                    Pay Bills
+                </button>
+
+                <button class="action" id="statementBtn">
+                    <span>▣</span>
+                    Statement
+                </button>
+            </div>
+        </section>
+
+        <section class="middle-grid">
+
+            <div class="panel">
+                <div class="panel-heading">
+                    <h2>Recent Transactions</h2>
+                    <button id="viewAll">View All</button>
+                </div>
+
+                <div id="transactionList">
+
+                    <div class="transaction">
+                        <div class="transaction-icon">☕</div>
+                        <div class="transaction-info">
+                            <strong>Starbucks Coffee</strong>
+                            <small>Today, 10:30 AM</small>
+                        </div>
+                        <strong class="expense">- ₹450</strong>
+                    </div>
+
+                    <div class="transaction">
+                        <div class="transaction-icon">🛒</div>
+                        <div class="transaction-info">
+                            <strong>Amazon Shopping</strong>
+                            <small>Yesterday, 4:15 PM</small>
+                        </div>
+                        <strong class="expense">- ₹2,500</strong>
+                    </div>
+
+                    <div class="transaction">
+                        <div class="transaction-icon">💼</div>
+                        <div class="transaction-info">
+                            <strong>Salary Credit</strong>
+                            <small>12 Nov, 9:00 AM</small>
+                        </div>
+                        <strong class="income">+ ₹45,000</strong>
+                    </div>
+
+                    <div class="transaction">
+                        <div class="transaction-icon">🎬</div>
+                        <div class="transaction-info">
+                            <strong>Netflix Subscription</strong>
+                            <small>10 Nov, 8:00 PM</small>
+                        </div>
+                        <strong class="expense">- ₹649</strong>
+                    </div>
+
+                    <div class="transaction">
+                        <div class="transaction-icon">⚡</div>
+                        <div class="transaction-info">
+                            <strong>Electricity Bill</strong>
+                            <small>08 Nov, 11:00 AM</small>
+                        </div>
+                        <strong class="expense">- ₹1,200</strong>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="panel">
+                <h2>Financial Summary</h2>
+
+                <div class="summary-box">
+                    <div>
+                        <small>Total Income</small>
+                        <h3 class="income">₹ 75,000</h3>
+                    </div>
+                    <span>↗</span>
+                </div>
+
+                <div class="summary-box">
+                    <div>
+                        <small>Total Expenses</small>
+                        <h3 class="expense">₹ 28,500</h3>
+                    </div>
+                    <span>↘</span>
+                </div>
+
+                <div class="summary-box">
+                    <div>
+                        <small>Total Savings</small>
+                        <h3>₹ 46,500</h3>
+                    </div>
+                    <span>♧</span>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="panel spending">
+            <div class="panel-heading">
+                <h2>Monthly Spending</h2>
+                <span>November 2026</span>
+            </div>
+
+            <div class="chart">
+
+                <div class="chart-column">
+                    <div class="bar" style="height:45%"></div>
+                    <small>Food</small>
+                </div>
+
+                <div class="chart-column">
+                    <div class="bar" style="height:75%"></div>
+                    <small>Shopping</small>
+                </div>
+
+                <div class="chart-column">
+                    <div class="bar" style="height:35%"></div>
+                    <small>Bills</small>
+                </div>
+
+                <div class="chart-column">
+                    <div class="bar" style="height:60%"></div>
+                    <small>Travel</small>
+                </div>
+
+                <div class="chart-column">
+                    <div class="bar" style="height:25%"></div>
+                    <small>Others</small>
+                </div>
+
+            </div>
+        </section>
+
+        <footer>
+            © 2026 WERT Bank. All Rights Reserved.
+        </footer>
+
+    </main>
+
+</div>
+
+</body>
+</html>
